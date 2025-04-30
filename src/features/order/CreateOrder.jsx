@@ -45,7 +45,7 @@ function CreateOrder() {
           <label className="sm:basis-40">First Name</label>
           <input
             className="input grow"
-            value={formData.customer}
+            value={formData.customer || ''}
             type="text"
             name="customer"
             onChange={handleChange}
@@ -59,7 +59,7 @@ function CreateOrder() {
               className="input w-full"
               type="tel"
               onChange={handleChange}
-              value={formData.phone}
+              value={formData.phone || ''}
               name="phone"
             />
           </div>
@@ -71,7 +71,7 @@ function CreateOrder() {
             <input
               className="input w-full"
               type="text"
-              value={formData.address}
+              value={formData.address || ''}
               name="address"
               onChange={handleChange}
             />
