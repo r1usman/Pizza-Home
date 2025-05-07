@@ -5,7 +5,7 @@ pipeline {
         
         stage('Fetch code ') {
             steps {
-                sh 'git clone https://github.com/r1usman/Pizza-Home.git /var/lib/jenkins/DevOps/php/'
+                sh 'git clone https://github.com/r1usman/upizza.git /var/lib/jenkins/DevOps/php/'
             }
         }
 
