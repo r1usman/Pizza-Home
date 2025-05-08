@@ -5,6 +5,7 @@ pipeline {
         stage('Cleanup Docker') {
             steps {
                 sh 'docker system prune -af' 
+                sh 'rm -r /var/lib/jenkins/DevOps/*'
 
             }
         }
