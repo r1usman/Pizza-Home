@@ -2,6 +2,12 @@ pipeline {
     agent any
 
     stages {
+        stage('Cleanup Docker') {
+            steps {
+                sh 'docker system prune -af' 
+
+            }
+        }
         
         stage('Fetch code ') {
             steps {
